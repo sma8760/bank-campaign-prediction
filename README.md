@@ -53,6 +53,11 @@ This project develops and compares multiple machine learning models to predict w
 - Precision-Recall Curve
 - SHAP Feature Importance
 
+## Business Analysis
+
+- Revenue, Cost, and Profit vs. Probability Threshold
+- Campaign Reach vs. Successful Subscriptions
+
 ## Results
 
 The best-performing model was a Random Forest classifier 
