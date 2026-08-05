@@ -46,10 +46,10 @@ Figure 2. Histograms of numerical features.
 
 
 
-*Balance* is highly right-skewed, with a small number of customers having very large account balances.
-*Campaign* is concentrated at low values, indicating that most customers were contacted only a few times.
-*Previous* is dominated by zeros, showing that most customers had not participated in earlier campaigns.
-Pdays contains many special values corresponding to customers who had never been contacted before.
+- *Balance* is highly right-skewed, with a small number of customers having very large account balances.
+- *Campaign* is concentrated at low values, indicating that most customers were contacted only a few times.
+- *Previous* is dominated by zeros, showing that most customers had not participated in earlier campaigns.
+- *Pdays* contains many special values corresponding to customers who had never been contacted before.
 
 These distributions suggest that the dataset contains substantial skewness and several extreme values.
 
@@ -79,10 +79,10 @@ Figure 4. Distribution of categorical variables.
 
 
 
-Administrative, blue-collar, and management occupations appear most frequently.
-Most customers have housing loans, while fewer have personal loans.
-Cellular contact is substantially more common than telephone contact.
-Marketing campaigns occur more frequently during certain months.
+- Blue-collar, management, and technician occupations appear most frequently.
+- Most customers have housing loans, while fewer have personal loans.
+- Cellular contact is substantially more common than telephone contact.
+- Marketing campaigns occur more frequently during certain months.
 
 These distributions provide useful context for understanding customer demographics before modeling.
 
@@ -99,8 +99,13 @@ we computed the subscription rate for different groups together with 95% confide
 Figure 5. Subscription rates with 95% confidence intervals.
 
 Continuous variables were grouped into intervals using equal-frequency (qcut) or custom bins where appropriate. 
+Here are some key observations:
 
-These figures suggest that customer history and previous marketing interactions are informative predictors.
+- Subscription rates decrease sharply as the number of contacts increases, which suggests during the current campaign, repeatedly contacting the same customer is generally ineffective.
+
+- Students have the highest subscription rate (28.7%). Their confidence interval is relatively wide, indicating greater uncertainty due to a smaller number of observations
+
+- Customers who were contacted more recently in a previous campaign tend to have lower subscription rates than those contacted a long time ago.
 
 
 
